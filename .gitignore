@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+*.db
+*.csv
+.DS_Store
+.coverage
+.idea
