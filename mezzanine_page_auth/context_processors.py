@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 def page_auth(request):
     """
     Returns context variables required for check authorizations on Mezzanine
