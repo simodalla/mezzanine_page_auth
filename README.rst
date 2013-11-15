@@ -12,7 +12,7 @@ Dependencies
 
 Mezzanine Auth Pages required:
 
-* `Mezzanine` 1.4
+* `Mezzanine`_ 1.4
 
 Installation
 ============
@@ -52,7 +52,7 @@ Enable ``PageAuthMiddleware`` middleware in your settings module as follows::
     )
 
 The order of ``MIDDLEWARE_CLASSES`` is important. You should include the
-``PageAuthMiddleware`` middleware after other mezzanine middlewares in the list.
+``PageAuthMiddleware`` middleware after other Mezzanine middlewares in the list.
 
 Template Context Processors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -64,26 +64,26 @@ Enable ``page_auth`` template context processors in your settings module as foll
     )
 
 The order of ``MIDDLEWARE_CLASSES`` is important. You should include the
-``PageAuthMiddleware`` middleware after other mezzanine middlewares in the list.
+``PageAuthMiddleware`` middleware after other Mezzanine middlewares in the list.
 
 Mezzanine Settings
 ~~~~~~~~~~~~~~~~~~
-Configure ``EXTRA_MODEL_FIELDS`` mezzanine setting in your settings module as
+Configure ``EXTRA_MODEL_FIELDS`` Mezzanine setting in your settings module as
 follows::
 
-EXTRA_MODEL_FIELDS = (
-    # ...
-    (
-        "mezzanine.pages.models.Page.groups",
-        "ManyToManyField",
-        ("auth.Group",),
-        {"blank": True, "null": True, "verbose_name": 'groups',
-         'symmetrical': False, 'through': "mezzanine_page_auth.PageAuthGroup"},
-    ),
-    # ...
-)
+    EXTRA_MODEL_FIELDS = (
+        # ...
+        (
+            "mezzanine.pages.models.Page.groups",
+            "ManyToManyField",
+            ("auth.Group",),
+            {"blank": True, "null": True, "verbose_name": 'groups',
+             'symmetrical': False, 'through': "mezzanine_page_auth.PageAuthGroup"},
+        ),
+        # ...
+    )
 
-Reference to _`Meazzanine Field Injection`_
+for inject into Mezzanine’s models (reference to `Field Injection`_ Mezzanine documantation)
 
 .. GENERAL LINKS
 
@@ -96,7 +96,7 @@ Reference to _`Meazzanine Field Injection`_
 .. _`Mingus`: http://github.com/montylounge/django-mingus
 .. _`Mezzanine`: http://mezzanine.jupo.org
 .. _`Mezzanine project page`: http://mezzanine.jupo.org
-.. _`Meazzanine Field Injection`: http://mezzanine.jupo.org/docs/model-customization.html#field-injection
+.. _`Field Injection`: http://mezzanine.jupo.org/docs/model-customization.html#field-injection
 .. _`Python`: http://python.org/
 .. _`pip`: http://www.pip-installer.org/
 .. _`bleach`: http://pypi.python.org/pypi/bleach
