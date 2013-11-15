@@ -4,13 +4,13 @@ Created by `Simone Dalla <http://twitter.com/simodalla>`_
 Overview
 ========
 
-Mezzanine Auth Pages is `Mezzanine`_ module for add group-level permission to
-Pages. Mezzanine Auth Pages is `BSD licensed`_.
+Mezzanine Page Auth is `Mezzanine`_ module for add group-level permission to
+Pages. Mezzanine Page Auth is `BSD licensed`_.
 
 Dependencies
 ============
 
-Mezzanine Auth Pages required:
+Mezzanine Page Auth required:
 
 * `Mezzanine`_ 1.4
 

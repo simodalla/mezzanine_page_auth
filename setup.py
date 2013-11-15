@@ -16,7 +16,7 @@ install_requires = [
 from mezzanine_page_auth import __version__ as version
 
 setup(
-    name='mezzanine-auth-pages',
+    name='mezzanine-page-auth',
     version=version,
     author='Simone Dalla',
     author_email='simodalla@gmail.com',
