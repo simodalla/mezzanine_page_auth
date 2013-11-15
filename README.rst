@@ -56,8 +56,7 @@ The order of ``MIDDLEWARE_CLASSES`` is important. You should include the
 
 Template Context Processors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Enable ``page_auth`` template context processors in your settings module as
- follows::
+Enable ``page_auth`` template context processors in your settings module as follows::
 
     TEMPLATE_CONTEXT_PROCESSORS = (
         # ...
