@@ -20,10 +20,18 @@ link_inlines.append(PageAuthGroupInline)
 
 
 class PageAuthGroupAdmin(PageAdmin):
+    """
+    Admin class for subclassing mezzanine 'PageAdmin' for expose new field
+    ``groups``  to the admin interface.
+    """
     inlines = page_inlines
 
 
 class LinkAuthGroupAdmin(LinkAdmin):
+    """
+    Admin class for subclassing mezzanine 'LinkAdmin' for expose new field
+    ``groups``  to the admin interface.
+    """
     inlines = page_inlines
 
 
