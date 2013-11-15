@@ -5,3 +5,7 @@
 .DS_Store
 .coverage
 .idea
+mezzanine_page_auth.egg-info/
+build/
+docs/build/
+dist/
