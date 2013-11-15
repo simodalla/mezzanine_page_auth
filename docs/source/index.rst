@@ -12,7 +12,7 @@ Mezzanine Page Auth is Mezzanine module for add group-level permission to Pages.
    :maxdepth: 2
 
    installation
-   configuration
+   templates
 
 
 Links
