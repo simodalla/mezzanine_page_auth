@@ -66,6 +66,25 @@ Enable ``page_auth`` template context processors in your settings module as foll
 The order of ``MIDDLEWARE_CLASSES`` is important. You should include the
 ``PageAuthMiddleware`` middleware after other mezzanine middlewares in the list.
 
+Mezzanine Settings
+~~~~~~~~~~~~~~~~~~
+Configure ``EXTRA_MODEL_FIELDS`` mezzanine setting in your settings module as
+follows::
+
+EXTRA_MODEL_FIELDS = (
+    # ...
+    (
+        "mezzanine.pages.models.Page.groups",
+        "ManyToManyField",
+        ("auth.Group",),
+        {"blank": True, "null": True, "verbose_name": 'groups',
+         'symmetrical': False, 'through': "mezzanine_page_auth.PageAuthGroup"},
+    ),
+    # ...
+)
+
+Reference to _`Meazzanine Field Injection`_
+
 .. GENERAL LINKS
 
 .. _`Django`: http://djangoproject.com/
@@ -77,6 +96,7 @@ The order of ``MIDDLEWARE_CLASSES`` is important. You should include the
 .. _`Mingus`: http://github.com/montylounge/django-mingus
 .. _`Mezzanine`: http://mezzanine.jupo.org
 .. _`Mezzanine project page`: http://mezzanine.jupo.org
+.. _`Meazzanine Field Injection`: http://mezzanine.jupo.org/docs/model-customization.html#field-injection
 .. _`Python`: http://python.org/
 .. _`pip`: http://www.pip-installer.org/
 .. _`bleach`: http://pypi.python.org/pypi/bleach
