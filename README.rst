@@ -5,7 +5,7 @@ Overview
 ========
 
 Mezzanine Auth Pages is `Mezzanine`_ module for add group-level permission to
-Pages. Mezzanine Auth Pages is `BSD licensed`_
+Pages. Mezzanine Auth Pages is `BSD licensed`_.
 
 Dependencies
 ============
@@ -45,8 +45,8 @@ Enable ``PageAuthMiddleware`` middleware in your settings module as follows::
 
     MIDDLEWARE_CLASSES = (
         # ...
-        # mezzanine.core.middleware...
-        # mezzanine.pages.middleware...
+        'mezzanine.core.middleware...
+        'mezzanine.pages.middleware...
         'debug_toolbar.middleware.DebugToolbarMiddleware',
         # ...
     )
@@ -54,8 +54,8 @@ Enable ``PageAuthMiddleware`` middleware in your settings module as follows::
 The order of ``MIDDLEWARE_CLASSES`` is important. You should include the
 ``PageAuthMiddleware`` middleware after other mezzanine middlewares in the list.
 
-TemplateContextProcessors
-~~~~~~~~~~
+Template Context Processors
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Enable ``page_auth`` template context processors in your settings module as
  follows::
 
