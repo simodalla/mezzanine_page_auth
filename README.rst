@@ -83,7 +83,7 @@ follows::
         # ...
     )
 
-for inject into Mezzanine’s models (reference to `Field Injection`_ Mezzanine documantation)
+for inject field ``groups`` into Mezzanine’s models (reference to `Field Injection`_ Mezzanine documantation).
 
 .. GENERAL LINKS
 
