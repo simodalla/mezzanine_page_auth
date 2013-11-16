@@ -5,7 +5,9 @@ Overview
 ========
 
 Mezzanine Page Auth is `Mezzanine`_ module for add group-level permission to
-Pages. Mezzanine Page Auth is `BSD licensed`_.
+Pages.
+
+Full Documentation at:
 
 Dependencies
 ============
@@ -84,6 +86,10 @@ follows::
     )
 
 for inject field ``groups`` into Mezzanine’s models (reference to `Field Injection`_ Mezzanine documantation).
+
+License
+=======
+Mezzanine Page Auth is `BSD licensed`_.
 
 .. GENERAL LINKS
 
