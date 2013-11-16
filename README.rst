@@ -17,7 +17,7 @@ Dependencies
 
 Mezzanine Page Auth required:
 
-* `Mezzanine`_ 1.4
+* `Mezzanine`_ 1.4+
 
 Installation
 ============
