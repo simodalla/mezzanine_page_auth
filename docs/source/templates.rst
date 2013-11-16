@@ -24,9 +24,10 @@ Here’s a example of customization of original ``tree.html`` template::
     {% endif %}
     # ...
 
-The ``unauthorized_pages` variable is inserted into template context by context
-processor ``'mezzanine_page_auth.context_processors.page_auth`` installation_
+The ``unauthorized_pages`` variable is inserted into template context by context
+processor ``'mezzanine_page_auth.context_processors.page_auth'`` installation_
 
 
 .. _`Page Menus`: http://mezzanine.jupo.org/docs/content-architecture.html#page-menus
-.. _installation:
+:ref:`installation`
+:ref:`search`
