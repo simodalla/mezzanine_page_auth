@@ -1,3 +1,5 @@
+.. _installation:
+
 Installation
 ============
 The easiest method is to install directly from pypi using `pip`_ by
@@ -37,6 +39,8 @@ Enable ``PageAuthMiddleware`` middleware in your settings module as follows::
 
 The order of ``MIDDLEWARE_CLASSES`` is important. You should include the
 ``PageAuthMiddleware`` middleware after other Mezzanine middlewares in the list.
+
+.. _template-context-processors:
 
 Template Context Processors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,3 +1,5 @@
+.. _templates:
+
 Templates
 =========
 
@@ -25,9 +27,7 @@ Here’s a example of customization of original ``tree.html`` template::
     # ...
 
 The ``unauthorized_pages`` variable is inserted into template context by context
-processor ``'mezzanine_page_auth.context_processors.page_auth'`` installation_
-
+processor ``'mezzanine_page_auth.context_processors.page_auth'``
+(reference :ref:`template-context-processors`)
 
 .. _`Page Menus`: http://mezzanine.jupo.org/docs/content-architecture.html#page-menus
-:ref:`installation`
-:ref:`search`
