@@ -2,11 +2,10 @@ Templates
 =========
 
 If you don't want display the pages into `Page Menus`_ you can override the page
-menu templates (``tree.html``, ``dropdown.html``, ``footer.html``) check if
-the ``pk`` of current page is in ``unauthorized_pages`` template context
- variable.
+menu templates (``tree.html``, ``dropdown.html``, ``footer.html``) checking if
+the ``pk`` of current page is in ``unauthorized_pages`` template context variable.
 
-Here’s a example of customization of original ``tree.html`` template:::
+Here’s a example of customization of original ``tree.html`` template::
 
     # ...
     {% if page.in_menu and page.pk not in unauthorized_pages %}
@@ -25,8 +24,8 @@ Here’s a example of customization of original ``tree.html`` template:::
     {% endif %}
     # ...
 
-The ``unauthorized_pages`` is inserted into template context by context processor
-``'mezzanine_page_auth.context_processors.page_auth``
+The ``unauthorized_pages` variable is inserted into template context by context
+processor ``'mezzanine_page_auth.context_processors.page_auth`` `Installation`_
 
 
 .. _`Page Menus`: http://mezzanine.jupo.org/docs/content-architecture.html#page-menus

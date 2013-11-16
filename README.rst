@@ -1,3 +1,6 @@
+.. image:: https://pypip.in/v/mezzanine-page-auth/badge.png
+   :target: https://crate.io/packages/mezzanine-page-auth/
+
 Created by `Simone Dalla <http://twitter.com/simodalla>`_
 
 ========
@@ -7,7 +10,7 @@ Overview
 Mezzanine Page Auth is `Mezzanine`_ module for add group-level permission to
 Pages.
 
-Full Documentation at:
+Full Documentation at: http://django-admin2.rtfd.org/
 
 Dependencies
 ============
@@ -96,10 +99,9 @@ Mezzanine Page Auth is `BSD licensed`_.
 .. _`Django`: http://djangoproject.com/
 .. _`Django Code of Conduct`: https://www.djangoproject.com/conduct/
 .. _`BSD licensed`: http://www.linfo.org/bsdlicense.html
-.. _`Wordpress`: http://wordpress.org/
-.. _`great sites people have built using Mezzanine`: http://mezzanine.jupo.org/sites/
-.. _`Pinax`: http://pinaxproject.com/
-.. _`Mingus`: http://github.com/montylounge/django-mingus
+.. _`Documentation`: http://mezzanine_page_auth.readthedocs.org/
+.. _`Official repository`: https://github.com/simodalla/mezzanine_page_auth/
+.. _`Package`: https://pypi.python.org/pypi/mezzanine-page-auth/
 .. _`Mezzanine`: http://mezzanine.jupo.org
 .. _`Mezzanine project page`: http://mezzanine.jupo.org
 .. _`Field Injection`: http://mezzanine.jupo.org/docs/model-customization.html#field-injection
