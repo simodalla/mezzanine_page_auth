@@ -5,7 +5,7 @@ Templates
 
 If you don't want display the pages into `Page Menus`_ you can override the page
 menu templates (``tree.html``, ``dropdown.html``, ``footer.html``) checking if
-the ``pk`` of current page is in ``unauthorized_pages`` template context variable.
+the ``pk`` of current page is not in ``unauthorized_pages`` template context variable.
 
 Here’s a example of customization of original ``tree.html`` template::
 
