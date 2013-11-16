@@ -10,14 +10,14 @@ Overview
 Mezzanine Page Auth is `Mezzanine`_ module for add group-level permission to
 Pages.
 
-Full Documentation at: http://django-admin2.rtfd.org/
+Full Documentation at: http://mezzanine_page_auth.readthedocs.org/
 
 Dependencies
 ============
 
 Mezzanine Page Auth required:
 
-* `Mezzanine`_ 1.4
+* `Mezzanine`_ 1.4+
 
 Installation
 ============
