@@ -25,10 +25,14 @@ License
 =======
 Mezzanine Page Auth is `BSD licensed`_.
 
-.. Indices and tables
-.. ==================
 ..
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
+   Indices and tables
+..
+   ==================
+..
+   * :ref:`genindex`
+..
+   * :ref:`modindex`
+..
+   * :ref:`search`
 
