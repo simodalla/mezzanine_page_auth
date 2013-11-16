@@ -3,7 +3,7 @@
 Mezzanine Page Auth
 ===================
 
-Mezzanine Page Auth is Mezzanine module for add group-level permission to Pages. Mezzanine Page Auth is BSD licensed.
+Mezzanine Page Auth is Mezzanine module for add group-level permission to Pages.
 
 .. toctree::
    :maxdepth: 2
@@ -20,7 +20,8 @@ Links
 
 License
 =======
-Mezzanine Page Auth is `BSD licensed`_.
+Mezzanine Page Auth is `BSD licensed`_. See the ``LICENSE`` file in the top
+distribution directory for the full license text.
 
 .. ..
    Indices and tables
