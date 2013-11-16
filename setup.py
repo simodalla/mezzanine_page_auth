@@ -10,7 +10,6 @@ README = open(os.path.join(
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 install_requires = [
-    "django >= 1.4.8, < 1.6",
     "mezzanine >= 1.4.0",
 ]
 
