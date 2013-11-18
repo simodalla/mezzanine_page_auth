@@ -25,15 +25,21 @@ mezzanine apps::
         # ...
     )
 
+You will then want to create the necessary tables. If you are using `South`_
+for schema migrations, you'll want to::
+
+    $ python manage.py migrate mezzanine_page_auth
+
+
 Middleware
 ~~~~~~~~~~
 Enable ``PageAuthMiddleware`` middleware in your settings module as follows::
 
     MIDDLEWARE_CLASSES = (
         # ...
-        'mezzanine.core.middleware...
-        'mezzanine.pages.middleware...
-        'debug_toolbar.middleware.DebugToolbarMiddleware',
+        "mezzanine.core.middleware..."
+        "mezzanine.pages.middleware..."
+        "mezzanine_page_auth.middleware.PageAuthMiddleware",
         # ...
     )
 
