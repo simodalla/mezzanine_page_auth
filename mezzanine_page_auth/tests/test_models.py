@@ -84,14 +84,3 @@ class UnauthorizedListPagesPageAuthGroupTest(TestCase):
             pk__in=pks_auth).values_list('page__pk', flat=True)))
         self.assertListEqual(pks, PageAuthGroup.unauthorized_pages(user))
 
-    #def test_user_access_to_page_without_group(self):
-    #    self.assertTrue(check_page_access(self.app_operator,
-    #                                      self.pages_no_group[0]))
-    #
-    #def test_user_access_to_page_with_other_group(self):
-    #    self.assertFalse(check_page_access(self.app_admin,
-    #                                       self.pages_with_group[0]))
-    #
-    #def test_user_access_to_page_with_group(self):
-    #    self.assertTrue(check_page_access(self.app_operator,
-    #                                      self.pages_with_group[0]))

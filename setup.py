@@ -27,6 +27,8 @@ setup(
     include_package_data=True,
     packages=find_packages(),
     install_requires=install_requires,
+    test_suite="runtests.runtests",
+    tests_require=["mock", "pep8", "pyflakes", "factory_boy"],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
