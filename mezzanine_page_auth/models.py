@@ -16,6 +16,7 @@ class PageAuthGroup(models.Model):
         verbose_name = _("Page Auth Group")
         verbose_name_plural = _("Page Auth Group")
         ordering = ("group",)
+        unique_together = ("page", "group")
 
     def __unicode__(self):
         return u"{}: {} has {}".format(self._meta.module_name, self.group.name,
