@@ -1,8 +1,8 @@
-Copyright (c) Simone Dalla and individual contributors. All rights reserved.
+Copyright (c) 2013 Simone Dalla. All rights reserved.
 
 Mezzanine Page Auth is licensed under The BSD License (3 Clause, also known as
-the new BSD license).  The license is an OSI approved Open Source
-license and is GPL-compatible(1).
+the new BSD license).  The license is an OSI approved Open Source license
+and is GPL-compatible(1).
 
 The license text can also be found here:
 http://www.opensource.org/licenses/BSD-3-Clause
@@ -13,16 +13,16 @@ License
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
 
-    1. Redistributions of source code must retain the above copyright notice,
-       this list of conditions and the following disclaimer.
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
 
-    2. Redistributions in binary form must reproduce the above copyright
-       notice, this list of conditions and the following disclaimer in the
-       documentation and/or other materials provided with the distribution.
+* Redistributions in binary form must reproduce the above copyright notice, this
+  list of conditions and the following disclaimer in the documentation and/or
+  other materials provided with the distribution.
 
-    3. Neither the name of Simone Dalla nor the names of its contributors may be used
-       to endorse or promote products derived from this software without
-       specific prior written permission.
+* Neither the name of Simone Dalla nor the names of its contributors may be used
+  to endorse or promote products derived from this software without specific
+  prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -46,9 +46,8 @@ http://creativecommons.org/licenses/by-nc-sa/3.0/us/
 
 Footnotes
 =========
-(1) A GPL-compatible license makes it possible to
-    combine Celery with other software that is released
-    under the GPL, it does not mean that we're distributing
-    Celery under the GPL license.  The BSD license, unlike the GPL,
-    let you distribute a modified version without making your
-    changes open source.
+(1) A GPL-compatible license makes it possible to combine Mezzanine Page Auth
+    with other software that is released under the GPL, it does not mean that
+    we're distributing Mezzanine Page Auth under the GPL license.  The BSD
+    license, unlike the GPL, let you distribute a modified version without
+    making your changes open source.
