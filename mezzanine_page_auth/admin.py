@@ -1,16 +1,18 @@
 # -*- coding: utf-8 -*-
-
+from __future__ import unicode_literals
 from copy import deepcopy
 from django.contrib import admin
 from mezzanine.pages.models import Page, RichTextPage, Link
 from mezzanine.pages.admin import PageAdmin, LinkAdmin
+from mezzanine.core.admin import TabularDynamicInlineAdmin
+from django.utils.functional import curry
 
 from .models import PageAuthGroup
 
 
-class PageAuthGroupInline(admin.TabularInline):
+class PageAuthGroupInline(TabularDynamicInlineAdmin):
     model = PageAuthGroup
-    extra = 1
+    # extra = 1
 
 
 page_inlines = deepcopy(PageAdmin.inlines)
@@ -25,6 +27,10 @@ class PageAuthGroupAdmin(PageAdmin):
     ``groups``  to the admin interface.
     """
     inlines = page_inlines
+
+    def save_related(self, request, form, formsets, change):
+        return super(PageAuthGroupAdmin, self).save_related(
+            request, form, formsets, change)
 
 
 class LinkAuthGroupAdmin(LinkAdmin):
