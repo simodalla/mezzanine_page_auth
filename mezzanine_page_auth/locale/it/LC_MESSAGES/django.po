@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 17:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: admin.py:28
+#, fuzzy, python-format
+msgid ""
+"The %(model_name)s \"%(page_title)s\" has inherited the authorizations from "
+"parent \"%(parent_title)s\""
+msgstr "%(model_name)s \"%(page_title)s\" ha ereditato le autorizzazioni da "
+"\"%(parent_title)s\""
+
+#: models.py:13
+msgid "page"
+msgstr "pagina"
+
+#: models.py:14
+msgid "group"
+msgstr "gruppo"
+
+#: models.py:18 models.py:19
+msgid "Page Auth Group"
+msgstr "Autorizzazione Pagina con Gruppo"
+
+#: custom_templates/pages/menus/dropdown.html:10
+#: custom_templates/pages/menus/footer_tree.html:11
+#: custom_templates/pages/menus/primary.html:8
+#: custom_templates/pages/menus/tree.html:10
+msgid "Home"
+msgstr ""

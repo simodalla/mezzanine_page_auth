@@ -3,10 +3,12 @@
 from django.contrib.auth.models import Group
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+from django.utils.encoding import python_2_unicode_compatible
 
 from mezzanine.pages.models import Page
 
 
+@python_2_unicode_compatible
 class PageAuthGroup(models.Model):
     page = models.ForeignKey(Page, verbose_name=_('page'))
     group = models.ForeignKey(Group, verbose_name=_('group'),
@@ -18,7 +20,7 @@ class PageAuthGroup(models.Model):
         ordering = ("group",)
         unique_together = ("page", "group")
 
-    def __unicode__(self):
+    def __str__(self):
         return u"{}: {} has {}".format(self._meta.module_name, self.group.name,
                                        self.page)
 

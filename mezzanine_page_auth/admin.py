@@ -25,8 +25,9 @@ class PageAuthGroupAdminMixin(object):
                 PageAuthGroup.objects.create(page=form.instance,
                                              group=parent_pag.group)
             msg = (
-                _('The page "%(page_title)s" has inherited the protections'
-                  ' from parent "%(parent_title)s"') % {
+                _('The %(model_name)s "%(page_title)s" has inherited the'
+                  ' authorizations from parent "%(parent_title)s"') % {
+                        'model_name': form.instance._meta.verbose_name,
                         'page_title': form.instance.title,
                         'parent_title': parent_title})
             self.message_user(request, msg, INFO)
