@@ -1,30 +1,30 @@
 # -*- coding: utf-8 -*-
-
+from __future__ import unicode_literals
 from mock import Mock
 
 from django.contrib.auth.models import AnonymousUser
 from django.http import HttpResponseForbidden
 from django.test import TestCase
 
-from .factories import (OperatorsGroupFactory, AdminsGroupFactory,
-                        UserFactory, RichTextPageFactory,
-                        RichTextPageWithGroupFactory)
+from .factories import (OperatorsGroupF, AdminsGroupF,
+                        UserF, RichTextPageF,
+                        RichTextPageWithGroupF)
 from ..middleware import PageAuthMiddleware
 
 
 class PageAuthMiddlewareTest(TestCase):
 
     def setUp(self):
-        self.goperators = OperatorsGroupFactory()
-        self.gadmins = AdminsGroupFactory()
-        self.app_operator = UserFactory.create(username='app_operator',
+        self.goperators = OperatorsGroupF()
+        self.gadmins = AdminsGroupF()
+        self.app_operator = UserF.create(username='app_operator',
                                            groups=(self.goperators,))
-        self.app_admin = UserFactory.create(username='app_admin',
+        self.app_admin = UserF.create(username='app_admin',
                                         groups=(self.gadmins,))
         self.n_pages = 3
-        self.pages_no_group = [RichTextPageFactory()
+        self.pages_no_group = [RichTextPageF()
                                for n in range(0, self.n_pages)]
-        self.pages_with_group = [RichTextPageWithGroupFactory()
+        self.pages_with_group = [RichTextPageWithGroupF()
                                  for n in range(0, self.n_pages)]
         self.middlware = PageAuthMiddleware()
 

@@ -7,8 +7,8 @@ from django.test import TestCase
 
 from mezzanine.pages.models import Page
 from ..models import PageAuthGroup
-from .factories import (GroupWithPageFactory, UserFactory, AdminUserFactory,
-                        RichTextPageFactory)
+from .factories import (GroupWithPageF, UserF, AdminUserF,
+                        RichTextPageF)
 
 
 class UnauthorizedListPagesPageAuthGroupTest(TestCase):
@@ -16,10 +16,10 @@ class UnauthorizedListPagesPageAuthGroupTest(TestCase):
     def setUp(self):
         self.n_groups = 3
         self.n_pages = 3
-        self.groups = [GroupWithPageFactory() for n in range(0, self.n_groups)]
-        self.users = [UserFactory.create(username='user_of_{}'.format(g.name),
+        self.groups = [GroupWithPageF() for n in range(0, self.n_groups)]
+        self.users = [UserF.create(username='user_of_{}'.format(g.name),
                                          groups=(g,)) for g in self.groups]
-        self.pages_no_group = [RichTextPageFactory()
+        self.pages_no_group = [RichTextPageF()
                                for n in range(0, self.n_pages)]
 
     @skip("Printing fixtures data for debug")
@@ -59,7 +59,7 @@ class UnauthorizedListPagesPageAuthGroupTest(TestCase):
         returns an empty list
         """
         self.assertListEqual(
-            [], PageAuthGroup.unauthorized_pages(AdminUserFactory()))
+            [], PageAuthGroup.unauthorized_pages(AdminUserF()))
 
     def test_unauthorized_list_pages_with_user_without_group(self):
         """
@@ -70,7 +70,7 @@ class UnauthorizedListPagesPageAuthGroupTest(TestCase):
                               for g in self.groups] for pk in pks]
         self.assertListEqual(
             pks, PageAuthGroup.unauthorized_pages(
-                UserFactory.create(username='user_without_group')))
+                UserF.create(username='user_without_group')))
 
     def test_unauthorized_list_pages_with_user_with_one_group(self):
         """

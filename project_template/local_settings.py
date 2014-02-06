@@ -5,6 +5,7 @@ DEBUG = True
 # Make these unique, and don't share it with anybody.
 SECRET_KEY = "%(SECRET_KEY)s"
 NEVERCACHE_KEY = "%(NEVERCACHE_KEY)s"
+TIME_ZONE = "Europe/Rome"
 
 DATABASES = {
     "default": {
@@ -89,3 +90,4 @@ MIDDLEWARE_CLASSES = (
     "mezzanine.core.middleware.FetchFromCacheMiddleware",
     "mezzanine_page_auth.middleware.PageAuthMiddleware",
 )
+
