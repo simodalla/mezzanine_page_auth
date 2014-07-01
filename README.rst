@@ -25,7 +25,7 @@ The easiest method is to install directly from pypi using `pip`_ by
 running the command below, which will also install the required
 dependencies mentioned above::
 
-    $ pip install mezzanine-auth-pages
+    $ pip install mezzanine_page_auth
 
 If you prefer, you can download mezzanine-auth-pages and install it directly from
 source::
