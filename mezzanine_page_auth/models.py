@@ -34,6 +34,7 @@ class PageAuthGroup(models.Model):
         groups = user.groups.all()
         if user.is_anonymous() or len(groups) == 0:
             return list(set(cls.objects.values_list('page__pk', flat=True)))
-        return list((cls.objects.exclude(group__in=groups).values_list(
+        pages = cls.objects.filter(group__in=groups).values_list('page__pk',flat=True)
+        return list((cls.objects.exclude(page__in=pages).values_list(
             'page__pk', flat=True)))
 

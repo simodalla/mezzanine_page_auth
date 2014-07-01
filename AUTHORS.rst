@@ -11,3 +11,4 @@ Contributors
 ------------
 
 * gelliravi <https://github.com/gelliravi>
+* Aidamir Lovpache <aidamatrix@gmail.com>
