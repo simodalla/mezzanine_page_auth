@@ -20,7 +20,7 @@ setup(
     author='Simone Dalla',
     author_email='simodalla@gmail.com',
     description='A Mezzanine module for add group-level permission to pages.',
-    long_description=README,
+    long_description=readme,
     license='BSD License',
     url='https://github.com/simodalla/mezzanine_page_auth/',
     include_package_data=True,
