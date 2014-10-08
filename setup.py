@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
-
+from __future__ import unicode_literals
 import os
 from setuptools import setup, find_packages
 
-README = open(os.path.join(
-    os.path.dirname(__file__), 'README.rst')).read().decode('utf-8')
+readme = open('README.rst', encoding='utf-8').read()
 
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 install_requires = [
-    "mezzanine >= 1.4.0",
+    'mezzanine >= 1.4.0',
 ]
 
 from mezzanine_page_auth import __version__ as version
@@ -21,14 +20,14 @@ setup(
     author='Simone Dalla',
     author_email='simodalla@gmail.com',
     description='A Mezzanine module for add group-level permission to pages.',
-    long_description=README,
+    long_description=readme,
     license='BSD License',
     url='https://github.com/simodalla/mezzanine_page_auth/',
     include_package_data=True,
     packages=find_packages(),
     install_requires=install_requires,
-    test_suite="runtests.runtests",
-    tests_require=["mock", "pep8", "pyflakes", "factory_boy"],
+    test_suite='runtests.runtests',
+    tests_require=['mock', 'pep8', 'pyflakes', 'factory_boy'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
@@ -36,7 +35,10 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.3',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Topic :: Internet :: WWW/HTTP :: WSGI',

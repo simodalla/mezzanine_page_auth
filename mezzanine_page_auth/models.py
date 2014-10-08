@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+from __future__ import unicode_literals
 from django.contrib.auth.models import Group
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
@@ -34,6 +34,8 @@ class PageAuthGroup(models.Model):
         groups = user.groups.all()
         if user.is_anonymous() or len(groups) == 0:
             return list(set(cls.objects.values_list('page__pk', flat=True)))
-        return list((cls.objects.exclude(group__in=groups).values_list(
+        pages = cls.objects.filter(group__in=groups).values_list('page__pk',
+                                                                 flat=True)
+        return list((cls.objects.exclude(page__in=pages).values_list(
             'page__pk', flat=True)))
 

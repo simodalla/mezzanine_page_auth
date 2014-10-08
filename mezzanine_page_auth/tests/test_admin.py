@@ -52,16 +52,17 @@ class PageAuthGroupAdminMixinSaveRelatedTest(TestCase):
                                        self.parent_page.pk))
         page_admin.save_related(
             request, self.mock_form, self.mock_form_formset, False)
-        mock_save_related.assert_called_once_with(request, self.mock_form,
-                                                  self.mock_form_formset, False)
+        mock_save_related.assert_called_once_with(
+            request, self.mock_form, self.mock_form_formset, False)
         self.assertListEqual(
             sorted(self.parent_page.pageauthgroup_set.values_list('group_id',
                                                                   flat=True)),
             sorted(page.pageauthgroup_set.values_list('group_id', flat=True)))
         mock_message_user.assert_called_once_with(
             request,
-            'The page "{}" has inherited the protections from'
-            ' parent "{}"'.format(page.title, self.parent_page.title),
+            'The {} "{}" has inherited the authorizations from'
+            ' parent "{}"'.format(page._meta.verbose_name,
+                                  page.title, self.parent_page.title),
             INFO)
 
     @patch('mezzanine_page_auth.admin.PageAuthGroupAdmin.message_user')
@@ -126,8 +127,9 @@ class PageAuthGroupAdminMixinSaveRelatedTest(TestCase):
                                                       flat=True)))
         mock_message_user.assert_called_once_with(
             request,
-            'The page "{}" has inherited the protections from'
-            ' parent "{}"'.format(page.title, self.parent_page.title),
+            'The {} "{}" has inherited the authorizations from'
+            ' parent "{}"'.format(
+                page._meta.verbose_name, page.title, self.parent_page.title),
             INFO)
 
     @patch('mezzanine_page_auth.admin.LinkAuthGroupAdmin.message_user')
