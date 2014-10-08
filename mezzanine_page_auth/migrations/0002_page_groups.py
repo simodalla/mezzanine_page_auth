@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='mezzanine.pages.page',
+            model_name='mezzanine.pages.Page',
             name='groups',
             field=models.ManyToManyField(blank=True, null=True, verbose_name='groups', to='auth.Group', through='mezzanine_page_auth.PageAuthGroup'),
             preserve_default=True,
