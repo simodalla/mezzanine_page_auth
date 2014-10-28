@@ -3,7 +3,10 @@ from __future__ import unicode_literals
 import os
 from setuptools import setup, find_packages
 
-readme = open('README.rst', encoding='utf-8').read()
+try:
+    readme = open('README.rst', encoding='utf-8').read()
+except:
+    readme = open('README.rst').read()    
 
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
